@@ -1,0 +1,559 @@
+/* ==========================================
+   MAHARASHTRA DISTRICT PORTAL - CORE STYLES
+   ========================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("maharashtra.jpg") center center/cover fixed no-repeat;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   TOP BAR
+   ========================================== */
+
+.topbar{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.topbar a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.topbar a:hover{
+    color: #ffd54f;
+}
+
+/* ==========================================
+   DATE TIME
+   ========================================== */
+
+.datetime{
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+.header{
+    width: 90%;
+    max-width: 900px;
+    margin: 15px auto 10px;
+    background: rgb(255, 255, 255); 
+    border-top: 5px solid #ff9933;
+    border-bottom: 5px solid #138808;
+    border-radius: 12px;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+.header h1{
+    font-size: 30px;
+    color: #0b3d91;
+}
+
+/* ==========================================
+   SEARCH BOX
+   ========================================== */
+
+.search-box{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.search-box input{
+    width: 60%;
+    max-width: 450px;
+    padding: 10px 18px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    background: #fff;
+}
+
+.search-box input:focus{
+    border-color: #2E8B57;
+}
+
+/* ==========================================
+   SEARCH RESULT
+   ========================================== */
+
+#searchResult{
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #2E8B57;
+}
+
+/* ==========================================
+   SEARCH SUGGESTIONS
+   ========================================== */
+
+#suggestions{
+    width: 60%;
+    max-width: 450px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+
+.suggestion-item{
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover{
+    background: #f5f5f5;
+}
+
+/* ==========================================
+   NOTICE
+   ========================================== */
+
+.notice{
+    display: table;
+    margin: 15px auto;
+    background: #fff3cd;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #f0c36d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   DISTRICT CARDS CONTAINER
+   ========================================== */
+
+#districtContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ==========================================
+   DISTRICT CARDS
+   ========================================== */
+
+.division{
+    width: 340px;
+    background: rgb(255, 255, 255); 
+    border-radius: 15px;
+    padding: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    transition: .3s;
+}
+
+.division:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
+}
+
+.division h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.division ul{
+    padding-left: 22px;
+}
+
+.division li{
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+/* ==========================================
+   DIVISION COLORS
+   ========================================== */
+.konkan{ border-top: 6px solid #2196F3; }
+.nashik{ border-top: 6px solid #9C27B0; }
+.pune{ border-top: 6px solid #FF9800; }
+.aurangabad{ border-top: 6px solid #795548; }
+.amravati{ border-top: 6px solid #4CAF50; }
+.nagpur{ border-top: 6px solid #FF5722; }
+
+/* ==========================================
+   LINKS
+   ========================================== */
+
+a{
+    text-decoration: none;
+    color: #0047ab;
+    font-weight: bold;
+    transition: .3s;
+}
+
+a:hover{
+    color: #e65100;
+}
+
+/* ==========================================
+   IMAGE GALLERY
+   ========================================== */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.gallery img{
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+    transition: .3s;
+}
+
+.gallery img:hover{
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   TABLES
+   ========================================== */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th{
+    background: #2E8B57;
+    color: #fff;
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.btn{
+    display: inline-block;
+    background: #2E8B57;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #1b5e20;
+    color: #fff;
+}
+
+/* ==========================================
+   BACK TO TOP
+   ========================================== */
+
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 15px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+    z-index: 999;
+}
+
+#topBtn:hover{
+    background: #000;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.footer{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* ==========================================================================
+   DISTRICT DETAIL PAGES MODULE LAYOUT 
+   ========================================================================== */
+
+.district-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10; /* Pulls top headers above any backgrounds */
+}
+
+.district-topbar {
+    width: 100%;
+    background: rgb(255, 255, 255); 
+    border-bottom: 4px solid #ff9933;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.district-topbar h1 {
+    margin: 0;
+    color: #0b3d91;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.district-topbar .tagline {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #555;
+    font-weight: 600;
+}
+
+.contact-bar {
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-bar span {
+    margin: 0 15px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.nav-container {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0047ab;
+    color: #fff !important;
+    border-radius: 25px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background: #ff9933;
+    transform: translateY(-2px);
+}
+
+.hero-banner {
+    width: 90%;
+    max-width: 1000px; 
+    margin: 15px auto;
+    background: rgb(224, 242, 254) !important; /* Force banner background color visibility */
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    border-left: 6px solid #138808;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-banner h2 {
+    margin: 0;
+    color: #138808; 
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.hero-banner p {
+    margin: 8px 0 0;
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+.content-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; 
+    position: relative;
+    z-index: 10; /* LAYER FIX: Forces the entire card module to slide cleanly over background shapes */
+}
+
+/* LAYER FIX: Forced solid white color card presentation with positional formatting */
+.content-wrapper > div, 
+.content-wrapper > section, 
+.section-box {
+    background-color: #ffffff !important; /* Pure solid opaque white color card */
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 25px !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
+    border-top: 5px solid #FF9800 !important;
+    text-align: center !important; 
+    width: 100% !important;
+    max-width: 1000px !important; 
+    display: block !important;
+    position: relative !important;
+    z-index: 15 !important; /* Makes sure the white background stays visible on top */
+}
+
+.content-wrapper h2, 
+.section-box h2 {
+    color: #0b3d91 !important;
+    font-size: 24px !important;
+    margin-bottom: 15px !important;
+    border-bottom: 2px solid #eee !important;
+    padding-bottom: 8px !important;
+    text-align: center !important;
+}
+
+.content-wrapper p, 
+.section-box p {
+    font-size: 16px !important;
+    color: #333 !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+}
+
+.content-wrapper img, 
+.section-img {
+    width: 100% !important;
+    max-width: 360px !important; 
+    height: auto !important;
+    max-height: 220px !important; 
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    margin: 0 auto 20px auto !important; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+    display: block !important;
+}
+
+.content-wrapper ul, 
+.section-box ul {
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    margin: 15px auto 0 auto !important;
+    background: #f9f9f9 !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    border-left: 4px solid #138808 !important;
+    max-width: 650px !important; 
+}
+
+.content-wrapper li, 
+.section-box li {
+    position: relative !important;
+    padding-left: 25px !important;
+    margin: 10px 0 !important;
+    font-size: 15px !important;
+    color: #444 !important;
+    font-weight: 500 !important;
+    text-align: left !important; 
+}
+
+.content-wrapper li::before, 
+.section-box li::before {
+    content: "🔸" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    font-size: 14px !important;
+}
+
+.main-footer {
+    background: linear-gradient(to right, #111, #222);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-top: 4px solid #ff9933;
+    position: relative;
+    z-index: 10;
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+@media(max-width:768px){
+    .header h1, .district-topbar h1{
+        font-size: 24px;
+    }
+
+    .hero-banner h2 {
+        font-size: 22px;
+    }
+
+    .division, .hero-banner, .content-wrapper {
+        width: 95%;
+    }
+
+    .search-box input, #suggestions, .notice{
+        width: 90%;
+    }
+
+    .notice{
+        text-align: center;
+    }
+    
+    .contact-bar span {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .content-wrapper img, .section-img {
+        max-height: 180px !important;
+    }
+}
